@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+fieldset {
+    border: none;
+}
+
+label, legend {
+    display: block;
+    font-size: 1.3em;
+    margin: 15px 0;
+}
+
+.input-padrao, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+textarea {
+    margin-bottom: 15px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+.enviar {
+    width: 100%;
+    padding: 15px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.enviar:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 40px 0 0;
+}
+
+th {
+    background-color: #555555;
+    color: white;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

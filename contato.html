@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Barbearia Alura</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/contato.css">
+    <link rel="stylesheet" href="estilos/footer.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagens/logo.png" alt="Logo da Barbearia Alura">
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="produto.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="contato.php" method="get" autocomplete="on">
+            <fieldset>
+                <div>
+                    <label for="nomesobrenome">Nome e Sobrenome</label>
+                    <input class="input-padrao" type="text" name="nomesobrenome" id="nomesobrenome" required maxlength="30" autocomplete="name">
+                </div>
+                <div>
+                    <label for="tel">Telefone</label>
+                    <input class="input-padrao" type="tel" name="tel" id="tel" required placeholder="(XX)XXXXX-XXXX" maxlength="14" autocomplete="tel">
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input class="input-padrao" type="email" name="email" id="email" required placeholder="seuemail@seudomínio.com" autocomplete="email">
+                </div>
+                <div>
+                    <label for="msg">Mensagem</label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <div>
+                    <label for="radio-email"><input type="radio" name="contato" id="radio-email"> E-mail</label>
+                </div>
+                <div>
+                    <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone"> Telefone</label>
+                </div>
+                <div>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" checked> whatsapp</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <label for="horario">Qual horário prefere ser atendido?</label>
+                    <select name="horario" id="horario">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+            </fieldset>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-feira</td>
+                    <td>8h às 20h</td>
+                </tr>
+                <tr>
+                    <td>Terça-feira</td>
+                    <td>8h às 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>8h às 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="imagens/logo-branco.png" alt="">
+        <p>&copy;Copyright Barbearia Alura - 2021</p>
+    </footer>
+</body>
+</html>

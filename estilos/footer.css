@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+
+footer {
+    background-image: url(../imagens/bg.jpg);
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-size: 0.8em;
+    padding: 10px;
+}

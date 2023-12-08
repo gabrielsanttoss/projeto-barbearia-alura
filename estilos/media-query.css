@@ -4,6 +4,14 @@
     nav a {
         font-size: 1.4em;
     }
+
+    .input-padrao, textarea {
+        width: 70%;
+    }
+
+    .enviar {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 992px) {
